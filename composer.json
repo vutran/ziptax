@@ -1,9 +1,9 @@
 {
-  "name" : "PHP Zip-Tax",
+  "name" : "vutran/ziptax",
   "description" : "A PHP wrapper for the zip-tax.com API.",
   "version" : "1.0.0",
   "type" : "library",
-  "keywords" : ["zip-tax", "tax", "zipcode", "postal code", "tax rate"],
+  "keywords" : ["vutran", "zip-tax", "tax", "zipcode", "postal code", "tax rate"],
   "homepage" : "https://github.com/vutran/php-ziptax",
   "time" : "2013-05-11",
   "license" : "GPL-2.0+",
