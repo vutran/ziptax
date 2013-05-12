@@ -29,12 +29,6 @@ class ZipTax {
    * @access private
    * @var string
    */
-  private $_action = 'request';
-
-  /**
-   * @access private
-   * @var string
-   */
   private $_version = 'v20';
 
   /**
@@ -66,9 +60,9 @@ class ZipTax {
    * @link http://www.zip-tax.com/documentation
    * @return object
    */
-  private function _call($params) {
+  private function _call($action, $params) {
     $queryString = http_build_query($params);
-    $requestEndpoint = sprintf('%s/%s/%s?%s', $this->_endpoint, $this->_action, $this->_version, $queryString);
+    $requestEndpoint = sprintf('%s/%s/%s?%s', $this->_endpoint, $action, $this->_version, $queryString);
     $ch = curl_init();
     curl_setopt($ch, CURLOPT_URL, $requestEndpoint);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -94,7 +88,7 @@ class ZipTax {
       'postalcode' => $postalCode,
       'format' => $this->_format
     );
-    $res = $this->_call($params);
+    $res = $this->_call('request', $params);
     return $res;
   }
 
