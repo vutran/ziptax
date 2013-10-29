@@ -5,8 +5,8 @@
   "type" : "library",
   "keywords" : ["vutran", "zip-tax", "tax", "zipcode", "postal code", "tax rate"],
   "homepage" : "https://github.com/vutran/php-ziptax",
-  "time" : "2013-05-11",
-  "license" : "GPL-2.0+",
+  "time" : "2013-10-29",
+  "license" : "MIT",
   "authors" : [
     {
       "name" : "Vu Tran",
