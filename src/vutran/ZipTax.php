@@ -7,7 +7,7 @@ namespace vutran;
  *
  * @package ZipTax
  * @version 1.0.0
- * @link https://github.com/vutran/js-caching
+ * @link https://github.com/vutran/ziptax
  * @author Vu Tran <vu@vu-tran.com>
  * @website http://vu-tran.com/
  */
